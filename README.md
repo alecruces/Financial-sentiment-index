@@ -15,7 +15,6 @@
 7. [License](#license)
 8. [Contact](#contact)
 
----
 
 ### About the Project
 
@@ -27,7 +26,6 @@ Two main outputs of the project are:
 
 The findings suggest that positive sentiment in FSRs correlates with economic strength and stability, while negative sentiment aligns with financial uncertainty.
 
----
 
 ### Key Features
 
@@ -36,8 +34,6 @@ The findings suggest that positive sentiment in FSRs correlates with economic st
 - **Sentiment Index Calculation**: Quantitative representation of sentiment using natural language data.
 - **Time-Series Sentiment Trends**: Analyzing sentiment dynamics across years of financial reports.
 
----
-
 ### Data Overview
 
 The project leverages **Chile’s Financial Stability Reports (FSRs)**, published semi-annually by the Central Bank of Chile from 2004 onwards. Due to confidentiality, FSR text data is not included in this repository.
@@ -45,7 +41,6 @@ The project leverages **Chile’s Financial Stability Reports (FSRs)**, publishe
 **External Resources**:
 - [Banco Central de Chile - Financial Stability Reports](https://www.bcentral.cl)
 
----
 
 ### NLP Methodology
 
@@ -72,7 +67,6 @@ The project leverages **Chile’s Financial Stability Reports (FSRs)**, publishe
      \]
 3. **Time-Series Trends**: Sentiment index values are plotted over time to reveal long-term trends.
 
----
 
 ### Results
 
