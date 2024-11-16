@@ -1,6 +1,6 @@
-# Financial Sentiment Index: Text Mining & Sentiment Analysis for Financial Stability Reports
+# Financial Sentiment Index: NLP for Chile’s Financial Stability Reports
 
-> Developing a Spanish-language financial sentiment dictionary and index to analyze the tone of Chile's Financial Stability Report using text mining and sentiment analysis.
+> Harnessing Natural Language Processing (NLP) techniques to create a financial sentiment index and analyze the tone of Chile's Financial Stability Reports.
 
 ---
 
@@ -9,60 +9,80 @@
 1. [About the Project](#about-the-project)
 2. [Key Features](#key-features)
 3. [Data Overview](#data-overview)
-4. [Methodology](#methodology)
-5. [Installation](#installation)
-6. [Usage](#usage)
-7. [Results](#results)
-8. [Contributing](#contributing)
-9. [License](#license)
-10. [Contact](#contact)
+4. [NLP Methodology](#nlp-methodology)
+5. [Results](#results)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
 
 ---
 
 ### About the Project
 
-The purpose of this project is to create a Spanish-language financial sentiment index to assess the tone of the Financial Stability Reports (FSRs) published by the Central Bank of Chile. By employing text mining and sentiment analysis techniques, the project provides two core outputs:
+This project applies **Natural Language Processing (NLP)** to develop a Spanish-language financial sentiment index. Using text mining techniques, the tone of Chile’s Financial Stability Reports (FSRs) is assessed, providing insights into economic sentiment trends over time.
 
-1. **Financial Sentiment Dictionary**: A Spanish lexicon adapted to measure sentiment specifically in financial stability contexts.
-2. **Financial Sentiment Index (FSI)**: An index tracking sentiment trends across multiple FSRs over time.
+Two main outputs of the project are:
+1. **Financial Sentiment Dictionary**: An NLP-powered Spanish lexicon tailored for financial stability contexts.
+2. **Financial Sentiment Index (FSI)**: A numerical representation of sentiment trends across multiple FSRs.
 
-The study’s findings correlate a positive tone in the FSI with strong economic activity, a stable financial market, and reduced uncertainty.
+The findings suggest that positive sentiment in FSRs correlates with economic strength and stability, while negative sentiment aligns with financial uncertainty.
+
+---
 
 ### Key Features
 
-- **Spanish Financial Sentiment Dictionary**: Tailored for analyzing FSRs from Chile, capturing the nuances of the Spanish language.
-- **Sentiment Analysis**: Positive and negative sentiment analysis for key terms in financial contexts.
-- **Index Calculation**: Quantitative representation of sentiment across time periods.
-- **Time-Series Analysis**: Historical trends in sentiment are explored with respect to economic events.
+- **NLP-Powered Sentiment Analysis**: Utilizing tokenization, lemmatization, and sentiment scoring to process financial texts.
+- **Custom Financial Sentiment Dictionary**: Built specifically for Spanish-language financial contexts, capturing nuances in FSRs.
+- **Sentiment Index Calculation**: Quantitative representation of sentiment using natural language data.
+- **Time-Series Sentiment Trends**: Analyzing sentiment dynamics across years of financial reports.
+
+---
 
 ### Data Overview
 
-The project utilizes data from Chile's Financial Stability Reports (FSRs) published semi-annually by the Central Bank of Chile from 2004 onwards. Due to confidentiality, the FSR text data is not included in this repository.
+The project leverages **Chile’s Financial Stability Reports (FSRs)**, published semi-annually by the Central Bank of Chile from 2004 onwards. Due to confidentiality, FSR text data is not included in this repository.
 
 **External Resources**:
-- Central Bank of Chile’s reports (available on [Banco Central de Chile’s website](https://www.bcentral.cl))
+- [Banco Central de Chile - Financial Stability Reports](https://www.bcentral.cl)
 
-### 4 Methodology
+---
+
+### NLP Methodology
 
 #### Part 1: Text Preprocessing
-1. **Text Extraction**: FSRs are converted from PDF to plain text using `pdftools`.
-2. **Text Cleaning**: Removal of non-text elements, numbers, and standard stopwords.
-3. **Stopword Filtering**: Custom stopwords relevant to financial stability are added.
+1. **PDF Text Extraction**: Using tools like `pdftools` for converting FSRs to plain text.
+2. **NLP Pipeline**:
+   - Tokenization: Breaking text into individual words and phrases.
+   - Lemmatization: Reducing words to their base forms for consistent analysis.
+   - Stopword Removal: Filtering out irrelevant or frequently occurring words.
+3. **Custom Stopwords**: Adding financial domain-specific stopwords to refine text analysis.
 
-#### Part 2: Dictionary Construction
-1. **Base Dictionary**: Words from financial stability reports in other languages are translated and adapted.
-2. **Sentiment Scoring**: Words are classified as positive, negative, or neutral based on financial stability context.
-3. **Bigram and Trigram Adjustments**: Multi-word expressions with contextual sentiment are identified and included.
+#### Part 2: Sentiment Dictionary Construction
+1. **Word Scoring**: Annotating financial terms as positive, negative, or neutral based on their context in FSRs.
+2. **Bigram and Trigram Handling**: Accounting for multi-word expressions with specific financial connotations.
 
 #### Part 3: Sentiment Index Calculation
-The Financial Sentiment Index (FSI) is calculated based on the proportion of positive and negative words across the FSRs. Two methods of calculation are used:
-1. **Standard FSI**: Ratio of positive to negative terms.
-2. **Normalized FSI**: Adjusted for the total word count in each report, ensuring consistency over time.
+1. **NLP-Based Sentiment Scoring**:
+   - Positive Score: Count of positive terms.
+   - Negative Score: Count of negative terms.
+2. **Financial Sentiment Index (FSI)**:
+   - **FSI Formula**:  
+     \[
+     FSI = \frac{\text{Positive Words} - \text{Negative Words}}{\text{Total Words}}
+     \]
+3. **Time-Series Trends**: Sentiment index values are plotted over time to reveal long-term trends.
 
-### 5 Results
-The FSI trends reveal insights into the economic climate over time. Key results include:
+---
 
-A positive sentiment correlates with strong economic indicators, such as higher GDP and reduced market volatility.
-Negative sentiment aligns with periods of economic uncertainty and financial instability (e.g., during the 2008 global financial crisis and the 2020 COVID-19 pandemic).
+### Results
+
+The **Financial Sentiment Index (FSI)** captures sentiment dynamics over time. Key findings include:
+
+- **Positive Sentiment**: Correlated with strong economic activity, reduced uncertainty, and stable financial markets.
+- **Negative Sentiment**: Linked to economic crises (e.g., 2008 financial crisis, 2020 COVID-19 pandemic).
+
+**Example Sentiment Trends**:
+- The sentiment index saw a sharp decline during global economic downturns, signaling financial instability.
+- Recovery periods showed a gradual increase in positive sentiment.
 
 <img width="623" alt="sentiment_index" src="https://github.com/user-attachments/assets/cc60c8c5-3c42-4fe5-a004-8a23820c4eb8">
