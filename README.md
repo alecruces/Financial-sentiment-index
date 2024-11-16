@@ -62,9 +62,8 @@ The project leverages **Chile’s Financial Stability Reports (FSRs)**, publishe
    - Negative Score: Count of negative terms.
 2. **Financial Sentiment Index (FSI)**:
    - **FSI Formula**:  
-     \[
-     FSI = \frac{\text{Positive Words} - \text{Negative Words}}{\text{Total Words}}
-     \]
+     FSI = (Positive Words - Negative Words) / Total Words
+     
 3. **Time-Series Trends**: Sentiment index values are plotted over time to reveal long-term trends.
 
 
