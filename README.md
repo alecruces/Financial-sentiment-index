@@ -11,9 +11,10 @@
 3. [Data Overview](#data-overview)
 4. [NLP Methodology](#nlp-methodology)
 5. [Results](#results)
-6. [Contributing](#contributing)
-7. [License](#license)
-8. [Contact](#contact)
+6. [Screenshots and Graphs](#screenshots-and-graphs)
+7. [Contributing](#contributing)
+8. [License](#license)
+9. [Contact](#contact)
 
 
 ### About the Project
@@ -79,3 +80,23 @@ The **Financial Sentiment Index (FSI)** captures sentiment dynamics over time. K
 - Recovery periods showed a gradual increase in positive sentiment.
 
 <img width="623" alt="sentiment_index" src="https://github.com/user-attachments/assets/cc60c8c5-3c42-4fe5-a004-8a23820c4eb8">
+
+### Screenshots and Graphs
+
+1. **MConstruction of the Dictionary by Correa et al. (2017)**  
+
+  <p align="center">
+  <img width="702" alt="process" src="https://github.com/user-attachments/assets/ec12990b-a4c5-4e35-9d17-9663e9268fd0">
+  </p>
+
+Note: Flowchart by Correa et al. (7) for the development of the Financial Stability dictionary. It collects FSRs from different countries, processes them, and discards words based on various criteria. First by frequency, then by the context of Financial Stability, and finally by tone, positive or negative.
+
+2. **Standardized FSI and Eventss**  
+
+  <p align="center">
+  <img width="702" alt="isef_events" src="https://github.com/user-attachments/assets/2202eb40-ab84-431f-ae7a-0095575aa41a">
+  </p>
+
+Note: Each bar represents the tone of the FSR in a given period. The ZISEFt is significant when it is less than -1 or greater than 1. When it is greater than 1, it has a negative tone or sentiment; when it is less than -1, it has a positive tone or sentiment. The dotted lines represent significant economic events for the Chilean economy.
+
+  
