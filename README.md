@@ -2,6 +2,8 @@
 
 > Harnessing Natural Language Processing (NLP) techniques to create a financial sentiment index and analyze the tone of Chile's Financial Stability Reports.
 
+![cover_image](https://github.com/user-attachments/assets/ad062e81-7eb2-4abd-84fb-0338867f1c1a)
+
 ---
 
 ## Table of Contents
@@ -79,7 +81,6 @@ The **Financial Sentiment Index (FSI)** captures sentiment dynamics over time. K
 - The sentiment index saw a sharp decline during global economic downturns, signaling financial instability.
 - Recovery periods showed a gradual increase in positive sentiment.
 
-<img width="623" alt="sentiment_index" src="https://github.com/user-attachments/assets/cc60c8c5-3c42-4fe5-a004-8a23820c4eb8">
 
 ### Screenshots and Graphs
 
