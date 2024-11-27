@@ -84,7 +84,7 @@ The **Financial Sentiment Index (FSI)** captures sentiment dynamics over time. K
 
 ### Screenshots and Graphs
 
-1. **MConstruction of the Dictionary by Correa et al. (2017)**  
+1. **Construction of the Dictionary by Correa et al. (2017)**  
 
   <p align="center">
   <img width="702" alt="process" src="https://github.com/user-attachments/assets/ec12990b-a4c5-4e35-9d17-9663e9268fd0">
